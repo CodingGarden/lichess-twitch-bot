@@ -161,6 +161,7 @@ async function listenChallenges() {
   const challenges = streamUrl(`${BASE_URL}/api/stream/event`);
   challenges.on('event', (event) => {
     if (event.type === 'challenge') {
+      // TODO: parameterize...
       if (event.challenge.challenger.id === 'w3cj') {
         updateChallenge(event);
       } else {
