@@ -1,0 +1,22 @@
+{
+  "name": "lichess-twitch-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "CJ R. <cj@null.computer> (https://w3cj.sh/)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "tmi.js": "^1.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
