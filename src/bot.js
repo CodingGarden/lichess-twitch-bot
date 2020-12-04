@@ -11,6 +11,7 @@ const {
   BOT_TOKEN,
   BOT_NAME,
   TWITCH_CHANNEL,
+  CHALLENGER_ID,
 } = process.env;
 
 const BASE_URL = 'https://lichess.org';
@@ -172,7 +173,7 @@ async function listenChallenges() {
   challenges.on('event', (event) => {
     if (event.type === 'challenge') {
       // TODO: parameterize...
-      if (event.challenge.challenger.id === 'w3cj') {
+      if (event.challenge.challenger.id === CHALLENGER_ID) {
         updateChallenge(event);
       } else {
         updateChallenge(event, 'decline');
